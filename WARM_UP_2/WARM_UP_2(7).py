@@ -1,5 +1,7 @@
 # array front9
-nine = [1, 2, 3, 4, 9]
+nine = []
+for i in range(5):
+    nine.append(input()))
 if len(nine) < 4:
     if 9 in nine:
         print(True)
