@@ -1,5 +1,5 @@
 # array count9
-nine = [1, 9, 9]
+nine = []
 for i in range(5):
     nine.append(int(input()))
 count = 0
