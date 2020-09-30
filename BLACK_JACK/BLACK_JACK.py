@@ -5,17 +5,17 @@ def compare_results(player_list, computer_list, opens=False):
         print("Draw")
         return True
     elif sum(player_list) > 21 and sum(computer_list) <= 21:
-        print(f"You loose-{sum(player_list)}! Computer score was {sum(computer_list)}")
+        print(f"You loose {sum(player_list)}! Computer score was {sum(computer_list)}")
         return True
     elif sum(computer_list) > 21 and sum(player_list) <= 21:
-        print(f"You win -{sum(player_list)}! Computer score was {sum(computer_list)}")
+        print(f"You win {sum(player_list)}! Computer score was {sum(computer_list)}")
         return True
     else:
         if opens:
             if sum(player_list) > 21 and sum(computer_list) <= 21:
-                print(f"You loose-{sum(player_list)}! Computer score was {sum(computer_list)}")
+                print(f"You loose {sum(player_list)}! Computer score was {sum(computer_list)}")
             elif sum(player_list) <= 21 and sum(computer_list) > 21:
-                print(f"You win -{sum(player_list)}! Computer score was {sum(computer_list)}")
+                print(f"You win {sum(player_list)}! Computer score was {sum(computer_list)}")
         return False
 
 def black_jack():
